@@ -1,0 +1,13 @@
+inp = raw_input('Enter your Hours ?\n')
+Hours = float(inp)
+inp = raw_input('Enter your Rate ?\n')
+Rate = float(inp)
+if Hours <= 40:
+    pay = Hours * Rate
+else:
+    def computepay(Hours , Rate):
+        addcal = (Hours-40)*(Rate+(Rate/2))+(40*Rate)
+        return addcal
+
+pay = computepay(Hours,Rate)
+print pay
